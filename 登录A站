@@ -3,6 +3,7 @@ import time
 
 driver = webdriver.Chrome()
 driver.get("https://www.acfun.cn/")
+#这里要注意必须使用.来衔接class中的多个属性，而不是使用HTML的空格
 elem = driver.find_element_by_class_name('item.user-login')
 elem.click()
 # 获取打开的多个窗口句柄
